@@ -1,0 +1,259 @@
+/* CSC309 SMART SHARE 
+ * CSS DOCUMENT */
+body {
+	background: #31240D;
+	background-image: url(../images/bg-1.png); /*grey stripe bg*/
+	margin: 0px 0px 0px 0px;
+	font-family: Arial;
+	font-size: 14px;
+	padding: 0;
+	line-height: 1.5em;
+}
+
+p {
+    margin: 5px;
+}
+
+a:link {
+	color: #077F25;
+	text-decoration: none;
+}
+
+a:active {
+	color: #077F25;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #077F25;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #077F25;
+	text-decoration: none;
+}
+
+b {
+	font-size: 120%;
+	color: #077F25;
+}
+
+bold {
+	font-weight: bold;
+}
+
+h4 {
+    margin: 10px;
+}
+
+#maincontainer {
+	width: 1000px; /*Width of main container*/
+	margin: 0 auto; /*Center container on page*/
+}
+
+#topsection {
+	background: #6E6E6E;
+	height: 100px; /*Height of top section*/
+}
+
+.sitename { /*background-image: url(../images/bg-2.png);*/
+	height: 95px;
+	padding-top: 22px;
+}
+
+.sitetitle {
+	color: #78E59E;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#contentwrapper {
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF; /*Set background white*/
+	overflow: hidden;
+}
+
+#contentcolumn {
+	float: left;
+	padding-top: 15px; /*Set space at the top*/
+	padding-bottom: 15px;
+	width: 70%;
+}
+
+#rightcolumn {
+	float: right;
+	width: 30%; /*Width of right column*/
+}
+
+#footer {
+	clear: left;
+	width: 100%;
+	background: #077F25;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+	padding: 4px 0;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+.innertube {
+	margin: 10px;
+	/*Margins for inner DIV inside each column (to provide padding)*/
+	margin-top: 0;
+}
+
+/* ------------------- Green Navigation ------------------ */
+#navi {
+	position: relative;
+	display: block;
+	height: 42px;
+	font-size: 11px;
+	font-weight: bold;
+	background: transparent url(../images/greenbg.gif) repeat-x top left;
+	font-family: Arial, Verdana, Helvitica, sans-serif;
+	text- transform: uppercase;
+}
+
+#navi ul {
+	margin: 0px;
+	padding: 0;
+	list-style-type: none;
+	width: auto;
+}
+
+#navi ul li {
+	display: block;
+	float: left;
+	margin: 0 1px 0 0;
+}
+
+#navi ul li a {
+	display: block;
+	float: left;
+	color: #EEFFDF;
+	text-decoration: none;
+	padding: 9px 22px 0 22px;
+	height: 28px;
+}
+
+#navi ul li a:hover,#tabs26 ul li a.current {
+	color: #fff;
+	background: transparent url(../images/greenbg_over.jpg) no-repeat top
+		center;
+}
+
+/* ---------------- END Green Navigation --------------- */
+
+/* --------------- FieldSet ------------------- */
+fieldset {
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #c0c0c0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+legend {
+	color: #000000;
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	padding: 2px 2px;
+}
+
+form {
+	margin: 0px;
+}
+
+form input,form select,form textarea {
+	margin-top: 3px;
+	padding: 1px;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-color: white;
+}
+
+form select,
+form [type=button],
+form [type=submit],
+form [type=checkbox]+label
+	{
+	display: inline-block;
+	cursor: pointer;
+}
+
+form input:hover,form select:hover,form textarea:hover,form input:focus,form select:focus,form textarea:focus
+	{
+	background-color: #ddffdd;
+}
+
+form [type=button],form [type=submit] {
+	padding: 2px;
+}
+
+#error_notification {
+	border: 1px #A25965 solid;
+	height: auto;
+	width: auto;
+	padding: 4px;
+	background: #F8F0F1;
+	text-align: center;
+	-moz-border-radius: 3px;
+}
+
+#confirm_notification {
+	border: 1px #4CC417 solid;
+	height: auto;
+	color: #FFFFFF;
+	width: auto;
+	padding: 4px;
+	background: #52D017;
+	text-align: center;
+	-moz-border-radius: 3px;
+}
+
+#login_response,#register_response,#forgot_response,#change_response {
+	overflow: auto;
+}
+
+#ajax_loading_login,#ajax_loading_reg,#ajax_loading_forgot,#ajax_loading_change
+	{
+	display: none;
+	font-size: 12px;
+	font-family: Tahoma;
+}
+
+#forgot,#change_pwd {
+	font-size: 10px;
+}
+
+#user_img {
+	width: 50px;
+	height: 60px;
+	float: left;
+}
+
+#form_container {
+	margin: 0px 10px;
+	min-height: 450px;
+}
+
+.viewsection {
+	margin-top: 10px;
+	padding: 0 10px;
+    border-top: 2px dotted #999999;
+}
+
+/* --------------- END FieldSet ------------------- */
+
